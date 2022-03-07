@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="style.css" />
+  <body>
+    <div class="navBar">
+      <img class="logoImg" src="/images/logo1.png" alt="shoe logo" />
+      <p class="logo">AiO</p>
+      <ul>
+        <li><a href=""></a>Donate</li>
+        <li><a href="about_us.html" class="aboutUs">About</a></li>
+        <li><a href=""></a>find job</li>
+        <li><a href="landing_page.html" class="aboutUs">Home</a></li>
+      </ul>
+    </div>
+    <div class="bannerLandingPage">
+      <p class="lpTxt">Solve <span class="ani"></span></p>
+      <form action="" id="signUpForm">
+        <h1>Register:</h1>
+        <br />
+
+        <div class="tab">
+          Name:
+          <p>
+            <input placeholder="First name..." oninput="this.className = ''" />
+          </p>
+          <p>
+            <input placeholder="Last name..." oninput="this.className = ''" />
+          </p>
+        </div>
+
+        <div class="tab">
+          Contact Info:
+          <p><input placeholder="E-mail..." oninput="this.className = ''" /></p>
+          <p><input placeholder="Phone..." oninput="this.className = ''" /></p>
+        </div>
+
+        <div class="tab">
+          Birthday:
+          <p><input placeholder="dd" oninput="this.className = ''" /></p>
+          <p><input placeholder="mm" oninput="this.className = ''" /></p>
+          <p><input placeholder="yyyy" oninput="this.className = ''" /></p>
+        </div>
+
+        <div class="tab">
+          Educational Attainment:
+          <p>
+            <input
+              placeholder="High school, Senior High, College... "
+              oninput="this.className = ''"
+            />
+          </p>
+          Monthly Income:
+          <p>
+            <input placeholder="Password..." oninput="this.className = ''" />
+          </p>
+        </div>
+
+        <div class="tab">
+          Login Info:
+          <p>
+            <input placeholder="Username..." oninput="this.className = ''" />
+          </p>
+          <p>
+            <input placeholder="Password..." oninput="this.className = ''" />
+          </p>
+        </div>
+        <div style="overflow: auto">
+          <div style="float: right">
+            <button type="button" id="prevBtn" onclick="nextPrev(-1)">
+              Previous
+            </button>
+            <button type="button" id="nextBtn" onclick="nextPrev(1)">
+              Next
+            </button>
+          </div>
+          <div class="tab">
+            Are you differently abled?:
+            <br />
+            <input
+              type="radio"
+              name="fav_language"
+              id="yes"
+              class="yes1"
+              oninput="this.className = ''"
+            />
+            <label for="yes1" class="s">YES</label>
+            <p>
+              <input
+                name="fav_language"
+                type="radio"
+                id="no"
+                class="yes1"
+                oninput="this.className = ''"
+              />
+              <label for="no" class="s">NO</label>
+            </p>
+          </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align: center; margin-top: 40px">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
+      </form>
+    </div>
+    <div class="footer">
+      <img src="/images/fblogo.png" alt="" class="fbLogo" />
+      <a
+        href="https://web.facebook.com/?_rdc=1&_rdr"
+        class="fbName"
+        target="_blank"
+        >On The Go</a
+      >
+      <img src="/images/twittericon.png" alt="" class="twitterLogo" />
+      <a href="https://twitter.com/?lang=en" class="twitterName" target="_blank"
+        >On The Go</a
+      >
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
